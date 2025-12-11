@@ -244,6 +244,12 @@ export default function ChannelsScreen({ route, navigation }) {
           renderItem={renderChannel}
           keyExtractor={(item, index) => `${item.name}-${index}`}
           contentContainerStyle={styles.list}
+          showsVerticalScrollIndicator={true}
+          removeClippedSubviews={true}
+          maxToRenderPerBatch={10}
+          updateCellsBatchingPeriod={50}
+          initialNumToRender={10}
+          windowSize={10}
         />
       )}
     </View>
@@ -256,6 +262,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#1a1a2e',
   },
   centered: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -324,6 +331,7 @@ const styles = StyleSheet.create({
   },
   list: {
     padding: 10,
+    paddingBottom: 20,
   },
   channelCard: {
     flexDirection: 'row',
