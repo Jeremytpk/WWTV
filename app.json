@@ -4,11 +4,20 @@
     "slug": "wwtv",
     "version": "1.0.0",
     "orientation": "default",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a0aee6c0-3ca6-4224-b766-a6c0817b92a8",
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_LOAD",
+      "enabled": true
+    },
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#1a1a2e"
     },
@@ -18,7 +27,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#1a1a2e"
       },
       "edgeToEdgeEnabled": true,
@@ -27,7 +36,7 @@
       ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     },
     "plugins": [
       "expo-video",
@@ -37,6 +46,12 @@
           "initialOrientation": "DEFAULT"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a0aee6c0-3ca6-4224-b766-a6c0817b92a8"
+      }
+    },
+    "owner": "jeremytpk"
   }
 }
